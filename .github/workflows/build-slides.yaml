@@ -34,13 +34,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: "14"
+          node-version: "18"
       - name: Install marp-cli
         run: npm install -g @marp-team/marp-cli
       - name: Build slides
-        run: marp --html --allow-local-files --output _site/ index.md
+        run: marp --html --allow-local-files --output _site/ SLIDES.md
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
