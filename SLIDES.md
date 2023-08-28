@@ -412,6 +412,70 @@ For now, you don't have to know the mechanics of how these values actually get u
 
 ---
 
+# Using `git` _outside_ of GitHub
+
+---
+
+## Installing a `git` client
+
+There are many options for `git` clients. I recommend [GitHub Desktop](https://desktop.github.com/), which is available for Mac and Windows.
+
+You can also use a client that's integrated into your code editor. For example, [VS Code](https://code.visualstudio.com/) has a built-in `git` client.
+
+Finally, you can use the command line. This is the most powerful option, but it's also the most difficult to learn. If you're interested in learning more about this, I recommend [this tutorial](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
+
+<hr>
+
+[1] https://desktop.github.com/
+    
+[2] https://code.visualstudio.com/
+
+---
+
+## Clone your repository
+
+![GitHub Repository - Cloning Options -- bg right:56.25% cover](figures/github-repository-clone.png)
+
+---
+
+## Where is your code?
+
+- Your `git` client will download a copy of your repository to your computer. This is called "cloning" the repository. By default, it will be saved in a folder called "GitHub" in your home directory.
+
+---
+
+## Update, commit, push!
+
+1.  Make changes to your local files
+2.  Commit those changes to your repository
+3.  Push those changes to GitHub
+
+---
+
+## ... but sometimes there may be conflicts!
+
+<!-- conflicts happen when git doesn't know what action should be taken. -->
+
+1.  Modify the _/data/settings.md_ file on GitHub:
+    ```yml
+    intro_title: My Personal Mission 10-word Summary
+    ```
+    Commit that change.
+2.  Modify the _/data/settings.md_ file on your computer:
+    ```yml
+    intro_title: The Personal Mission 10-word Summary
+    ```
+    Commit that change.
+3.  Try to push your changes to GitHub.
+
+---
+
+## Conflicts can be resolved!
+
+... but it's a different process in each client.
+
+---
+
 # Additional Resources
 
 ---
@@ -441,7 +505,16 @@ Decent YAML Basics from Tutorials Point: https://www.tutorialspoint.com/yaml/yam
 
 ---
 
-Common actions:
+## Sample GH Pages themes
+
+- [Forty](https://jekyllthemes.io/theme/forty-jekyll-theme)
+- [Freelancer](https://jekyllthemes.io/theme/freelancer-theme)
+- [Millennial](https://jekyllthemes.io/theme/millennial)
+- Other [free themes](https://jekyllthemes.io/free) and [awesome themes](https://github.com/planetjekyll/awesome-jekyll-themes)
+
+---
+
+# Common actions:
 - Fork a repository
 - Clone a repository
 - Create a branch
@@ -451,36 +524,6 @@ Common actions:
 - Submit a pull request
 - Merge a pull request
 - Checkout a branch
-
----
-
-Vocabulary:
-- Repository
-- Fork
-
----
-
-Sample GH Pages themes:
-- [Forty](https://jekyllthemes.io/theme/forty-jekyll-theme)
-- [Freelancer](https://jekyllthemes.io/theme/freelancer-theme)
-- [Millennial](https://jekyllthemes.io/theme/millennial)
-- Other [free themes](https://jekyllthemes.io/free) and [awesome themes](https://github.com/planetjekyll/awesome-jekyll-themes)
-
----
-
-## Installing a `git` client
-
-There are many options for `git` clients. I recommend [GitHub Desktop](https://desktop.github.com/), which is available for Mac and Windows.
-
-You can also use a client that's integrated into your code editor. For example, [VS Code](https://code.visualstudio.com/) has a built-in `git` client.
-
-Finally, you can use the command line. This is the most powerful option, but it's also the most difficult to learn. If you're interested in learning more about this, I recommend [this tutorial](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
-
----
-
-## Where is your code?
-
-- Your `git` client will download a copy of your repository to your computer. This is called "cloning" the repository. By default, it will be saved in a folder called "GitHub" in your home directory.
 
 ---
 
