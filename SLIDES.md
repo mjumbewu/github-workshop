@@ -174,7 +174,7 @@ _(Use your personal or Penn email address -- you can add more than one address l
 
 ![Forking a repository -- bg right:56.25% cover](figures/github-forking-a-repository.png)
 
-1.  Navigate to https://www.github.com/musa/musa-portfolio-template
+1.  Navigate to https://www.github.com/mjumbewu/musa-portfolio-template
 2.  Click the "Use this template" button to create a new repository based on this template.
 
 <!-- I created a repository that you can use as a template for your portfolio. I actually created this repository based on someone else's work. I recommand taking a read through the information contained in the README file.
