@@ -386,6 +386,8 @@ Take a few minutes ⏲️ to try the following:
 
 Find the _data/settings.yml_ file in your repository. This is what YAML looks like.
 
+![Settings YAML -- bg right:56.25% cover](figures/portfolio-settings-initial.png)
+
 ---
 
 ## YAML Basics
