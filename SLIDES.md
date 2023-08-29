@@ -472,9 +472,18 @@ Finally, you can use the command line. This is the most powerful option, but it'
 
 ---
 
+## Conflicts look like this
+
+![Merge Conflicts in settings.yml -- bg right:56.25% cover](figures/portfolio-settings-conflict.png)
+
+---
+
 ## Conflicts can be resolved!
 
-... but it's a different process in each client.
+- The first line (`<<<<<<< HEAD`) indicates the start of the conflict, and everything after that until the divider (`=======`) is the version of the file on your computer.
+- Everything after the divider until the end (`>>>>>>> 3e786d06739949404525e25a4eeabc01448f1486`) is the version of the file on GitHub.
+- You just have to figure out what the correct code is, and then delete the conflict markers (`<<<<<`, `=====`, and `>>>>>`).
+- Each `git` client provides you different ways of making those choices. In GitHub Desktop, you can click on the conflict markers to choose which version you want to keep.
 
 ---
 
