@@ -468,11 +468,11 @@ Finally, you can use the command line. This is the most powerful option, but it'
     intro_title: The Personal Mission 10-word Summary
     ```
     Commit that change.
-3.  Try to push your changes to GitHub.
+3.  Try to push your changes to GitHub. It should prompt you to **fetch** first. Fetch, and then **pull**. You should see a merge conflict.
 
 ---
 
-## Conflicts look like this
+## Conflicts look something like this
 
 ![Merge Conflicts in settings.yml -- bg right:56.25% fit](figures/portfolio-settings-conflict.png)
 
@@ -480,10 +480,23 @@ Finally, you can use the command line. This is the most powerful option, but it'
 
 ## Conflicts can be resolved!
 
-- The first line (`<<<<<<< HEAD`) indicates the start of the conflict, and everything after that until the divider (`=======`) is the version of the file on your computer.
-- Everything after the divider until the end (`>>>>>>> 3e786d06739949404525e25a4eeabc01448f1486`) is the version of the file on GitHub.
+- The first line (`<<<<<<< HEAD`) indicates the start of the conflict, and everything after that until the divider (`=======`) is the version of the content from your computer.
+- Everything after the divider until the end (`>>>>>>> 3e786d06...`) is the latest commit content from GitHub (the long hexidecimal number is the commit hash).
 - You just have to figure out what the correct code is, and then delete the conflict markers (`<<<<<`, `=====`, and `>>>>>`).
-- Each `git` client provides you different ways of making those choices. In GitHub Desktop, you can click on the conflict markers to choose which version you want to keep.
+- Each `git` client provides you different ways of making those choices. In GitHub Desktop, you can [click on the conflict markers to choose which version you want to keep](https://www.youtube.com/watch?v=MIVW0sijSjY).
+
+---
+
+## Collaboration recommendations
+
+1.  When working on the same code base, work on different components
+    - Ideally those components are in different files
+    - If they're in the same file, work on different parts of the file
+    - Nothing beats effective real-life communication!
+2.  When merge conflicts arise, rely on your tools
+    - Merge conflicts will happen. Take a deep breath, follow the instructions in your `git` client, and resolve them carefully.
+3.  Commit and sync (push/pull) your code frequently
+    - This will help you avoid merge conflicts, or at least allow you to resolve them before they become too complicated
 
 ---
 
@@ -535,15 +548,3 @@ Decent YAML Basics from Tutorials Point: https://www.tutorialspoint.com/yaml/yam
 - Submit a pull request
 - Merge a pull request
 - Checkout a branch
-
----
-
-## Collaboration recommendations
-
-1.  When working on the same code base, work on different components
-    - Ideally those components are in different files
-    - If they're in the same file, work on different parts of the file
-2.  When merge conflicts arise, rely on your tools
-    - Merge conflicts will happen. Take a deep breath, follow the instructions in your `git` client, and resolve them carefully.
-3.  Commit and sync (push/pull) your code frequently
-    - This will help you avoid merge conflicts, or at least allow you to resolve them before they become too complicated
