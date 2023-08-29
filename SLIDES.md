@@ -156,7 +156,7 @@ Generally, to use git and GitHub you want to have a GitHub account _and_ a progr
 [back to the slides]
 -->
 
-![GitHub Home Page -- bg right:56.25% cover](figures/github-homepage.png)
+![GitHub Home Page -- bg right:56.25% fit](figures/github-homepage.png)
 
 Take a few minutes to do this now ⏲️.
 
@@ -172,7 +172,7 @@ _(Use your personal or Penn email address -- you can add more than one address l
 
 ## Make a copy of the portfolio template repository
 
-![Forking a repository -- bg right:56.25% cover](figures/github-forking-a-repository.png)
+![Forking a repository -- bg right:56.25% fit](figures/github-forking-a-repository.png)
 
 1.  Navigate to https://www.github.com/mjumbewu/musa-portfolio-template
 2.  Click the "Use this template" button to create a new repository based on this template.
@@ -198,7 +198,7 @@ This may be the first time that I introduced the word "repository". It's a very 
 
 ## You've forked the repository!
 
-![Forked Portfolio Repository -- bg right:56.25% cover](figures/github-forked-portfolio-repo.png)
+![Forked Portfolio Repository -- bg right:56.25% fit](figures/github-forked-portfolio-repo.png)
 
 If you refresh you should see the same files as before, but under your account.
 
@@ -208,7 +208,7 @@ If you refresh you should see the same files as before, but under your account.
 
 ...but we can do better.
 
-![Browsing Files -- bg right:56.25% cover](figures/github-browsing-repo-files.png)
+![Browsing Files -- bg right:56.25% fit](figures/github-browsing-repo-files.png)
 
 <!-- Technically, at this point anyone could access the content in this portfolio website (assuming you made the repository "Public") by just browsing to the appropriate folders and files. Each one of the individual project pages in this site is represented by a Markdown file; we'll talk about Markdown a little later, but I also know that you'll cover it in more deptch at some point in 508.
 
@@ -218,7 +218,7 @@ Browsing files like this certainly isn't the most engaging way to see the inform
 
 ## Open the GitHub Pages settings
 
-![GitHub Settings, General Tab -- bg right:56.25% cover](figures/github-settings-general.png)
+![GitHub Settings, General Tab -- bg right:56.25% fit](figures/github-settings-general.png)
 
 <!-- To get to the pages settings, first open the repository settings with the Settings button which should be in the top-right of your repo links. -->
 
@@ -226,7 +226,7 @@ Browsing files like this certainly isn't the most engaging way to see the inform
 
 ## Open the GitHub Pages settings
 
-![GitHub Settings, Pages Tab -- bg right:56.25% cover](figures/github-settings-pages-initial.png)
+![GitHub Settings, Pages Tab -- bg right:56.25% fit](figures/github-settings-pages-initial.png)
 
 <!-- Then, over on the left side you should see an option labeled "Pages". -->
 
@@ -234,7 +234,7 @@ Browsing files like this certainly isn't the most engaging way to see the inform
 
 ## Configure the GitHub Pages site
 
-![GitHub Settings, Select Pages Branch -- bg right:56.25% cover](figures/github-settings-pages-select-branch.png)
+![GitHub Settings, Select Pages Branch -- bg right:56.25% fit](figures/github-settings-pages-select-branch.png)
 
 Select the deployment branch and click **Save**.
 
@@ -246,7 +246,7 @@ Right now, there should only be one branch in your repo -- called "main". Select
 
 ## In a couple minutes, your site will be ready!
 
-![GitHub Settings, Pages Finished Building -- bg right:56.25% cover](figures/github-settings-pages-finished-building.png)
+![GitHub Settings, Pages Finished Building -- bg right:56.25% fit](figures/github-settings-pages-finished-building.png)
 
 
 You can keep refreshing the settings page to see when it's done.
@@ -263,7 +263,7 @@ e.g. [https://**mjumbewu**.github.io/**portfolio**/](https://mjumbewu.github.io/
 
 ---
 
-![Full-screen Portfolio - Initial -- bg right:56.25% cover](figures/portfolio-initial-large.png)
+![Full-screen Portfolio - Initial -- bg right:56.25% fit](figures/portfolio-initial-large.png)
 
 A new portfolio is now available at your URL (but you haven't _really_ made it yours yet).
 
@@ -474,7 +474,7 @@ Finally, you can use the command line. This is the most powerful option, but it'
 
 ## Conflicts look like this
 
-![Merge Conflicts in settings.yml -- bg right:56.25% cover](figures/portfolio-settings-conflict.png)
+![Merge Conflicts in settings.yml -- bg right:56.25% fit](figures/portfolio-settings-conflict.png)
 
 ---
 
