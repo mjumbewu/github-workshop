@@ -5,33 +5,46 @@ marp: true
 # MUSA GitHub Workshop
 _Using `git` and GitHub for your projects and portfolio_
 
+<!-- To start off: by show of hands, get a sense for who has heard of GitHub, and who has a GitHub account. Who has used it on a project with other people? Note that they're not expected to. 
+
+I want you all to leave here with a functioning portfolio. 
+
+Objectives:
+- 
+
+-->
+
 ---
 
 ## Imagine this scenario...
 
-<!-- This pattern is based very roughly on a real project I worked on recently, though the specifics have been changed. -->
+<!-- This pattern is based very roughly on a real project I worked on not too long ago, though the specifics have been changed. -->
 
 ![Motivating scenario -- bg right cover](figures/sample-model-development-process.png)
 I'm working on a model for dynamic parking pricing for OTIS in Philadelphia.
 
-<!-- I have examples of prior art from other cities, but I want to make sure that my model is as accurate as possible for the context of Philadelphia. This means I'm going to have to try out a few models, get feedback from my colleagues, and iterate on my work.-->
+<!-- Let's say I work for the office of transportation, infrastructure, and sustainability (OTIS) in Philadelphia. I'm working on a model for dynamic parking pricing. This is a model that will adjust the price of parking in the city based on demand. The goal is to reduce congestion and pollution in the city, while keeping parking available for when it's needed.
 
-<!-- Let's say I'm working in R and I put together a first pass in a file named dynamic_pricing. This is entirely reasonable. -->
+I have examples of prior art from other cities, but I want to make sure that my model is as accurate as possible for the context of Philadelphia. This means I'm going to have to try out a few models, get feedback from my colleagues, and iterate on my work.-->
+
+<!-- Let's say I'm working in R and I put together a first pass in a file named dynamic_pricing. This is entirely reasonable. [CLICK] -->
 * dynamic_pricing.r
-<!-- Now I run the model by some of my colleagues and they give me some other ideas that might improve the model, but might not. I want to test it so I create a copy of my file called dynamic_pricing_revised. This is the beginning of my trouble. -->
+<!-- Now I run the model by some of my colleagues and they give me some other ideas that might improve the model, but might not. I want to test it so I create a copy of my file called dynamic_pricing_revised. This is the beginning of my trouble.  [CLICK] -->
 * dynamic_pricing_revised.r
-<!-- That same process happens again and I end up with a revision of my revision, dynamic_pricing_revised_2, since I don't want to lose my previous versions, just in case. -->
+<!-- That same process happens again and I end up with a revision of my revision, dynamic_pricing_revised_2, since I don't want to lose my previous versions, just in case. [CLICK]-->
 * dynamic_pricing_revised_2.r
-<!-- Finally, I'm ready to share my work with a wider presentation to stakeholders. -->
+<!-- Finally, I'm ready to share my work with a wider presentation to stakeholders. [CLICK] -->
 * dynamic_pricing_final.r
+<!-- This is a pretty common pattern, and it's a mess. Someone coming to the code base 3 months in the future isn't going to know which files are necessary to keep around, and which are just clutter. And many times you actually see something like this: [CLICK] -->
+* dynamic_pricing_final_2.r
 
-<!-- This is a pretty common pattern, and it's a mess. Someone coming to the code base 3 months in the future isn't going to know which files are necessary to keep around, and which are just clutter. We can do better, and in this workshop we're going to talk about how. -->
+<!-- We can do better, and in this workshop we're going to talk about how. -->
 
 ---
 
 ## Goals
 
-**Outcome**: You will leave here with a portfolio site hosted on GitHub Pages that you'll be able to add entries to as you complete projects in the MUSA program.
+**Product**: You will leave here with a portfolio site hosted on GitHub Pages that you'll be able to add entries to as you complete projects in the MUSA program.
 
 **Purpose**: To introduce you to the concept of version control, and to give you a basic understanding of why and how to use version control &mdash; specifically a version control system called `git`, along with the website GitHub.
 
@@ -46,11 +59,11 @@ _This workshop is in line with the following MUSA program learning outcomes:_
 ## Agenda
 
 0.  Intro &mdash; setting the stage (5 min)
-1.  What is a VCS? What is `git`? What is GitHub?
-2.  Getting started with GitHub
+1.  What is a VCS? What is `git`? What is GitHub? (10 min)
+2.  Getting started with GitHub (10 min)
     - Signing up for an account
     - Creating your portfolio
-3. Customizing your portfolio
+3. Customizing your portfolio (15 min)
     - Adding projects with Markdown
     - Modifying the configuration with YAML
     - Peeling back the curtain &mdash; how's it work?
@@ -74,6 +87,8 @@ The purpose of a *version control system* (**VCS** -- also called a *source code
 
 - **Tracking changes:** A VCS monitors the changes you make to your code. Instead of saving new versions of your files like "script_final," "script_final_revised," and so on (which we've all done 😒), a VCS keeps a detailed record of each change, and allows you to add annotations to your changes like "added an introduction," "changed the main function's name," and so forth.
 - **Collaboration:** If you're working with colleagues on the same code or sharing your code with others, a VCS helps everyone stay on the same page. It ensures that everyone can work on the code at the same time without messing things up. It's akin to working with others in the same Google Doc, rather than emailing around different versions of a Word document.
+
+<!-- There's a lot of text on this slide, but you don't have to read it all. You _can_ access these slides online. -->
 
 ---
 
@@ -106,7 +121,7 @@ By 2014, all of the projects that I was working on were tracked in Git.
 
 ## Why is `git` the most popular VCS?
 
-<!-- Is this true? I don't have a statistic to back it up, and there are many metrics that you could possibly use, but based on what I've seen in tech writ large, git is the most popular VCS. Even if it's a plurality, I'm fairly certain there's no VCS more popular than git today. 
+<!-- [REGARDING THE "MOST POPULAR"] Is this true? I don't have a statistic to back it up, and there are many metrics that you could possibly use, but based on what I've seen in tech writ large, git is the most popular VCS. Even if it's a plurality, I'm fairly certain there's no VCS more popular than git today. 
 
 [back to the slide]
 
@@ -174,7 +189,7 @@ _(Use your personal or Penn email address -- you can add more than one address l
 
 ![Forking a repository -- bg right:56.25% fit](figures/github-forking-a-repository.png)
 
-1.  Navigate to https://www.github.com/mjumbewu/musa-portfolio-template
+1.  Navigate to https://www.github.com/weitzman-musa/portfolio-template
 2.  Click the "Use this template" button to create a new repository based on this template.
 
 <!-- I created a repository that you can use as a template for your portfolio. I actually created this repository based on someone else's work. I recommand taking a read through the information contained in the README file.
@@ -241,6 +256,44 @@ Select the deployment branch and click **Save**.
 <!-- The only setting we'll have to configure is to select the "branch" that GitHub Pages will use. In a git repository you can have several "branches", each of which has a slightly different version of your website. You can them "merge" one branch into another. This can be useful in this case, for example, if you wanted to upload a draft of a post to your repository, but don't want to publish it on your live site yet.
 
 Right now, there should only be one branch in your repo -- called "main". Select that branch and click the "Save" button. -->
+
+---
+
+<!-- I'll give a quick overview of branches while we wait for your github pages site to deploy. Branches are a way that you can work on one version of your project without worrying about breaking another version. A clear example of this in public facing websites like portfolios is if you want to have a draft version of your repository in addition to the one that is live for everyone to see. -->
+
+![Branches 1 -- bg fit](figures/branches-1.png)
+
+---
+
+<!-- Let's say your portfolio is live on the main branch of your repository. Initially your commit history may look like this, where you've started the repository with the necessary files, and then later on you added in a project.
+
+Now let's say you want to add information about a second project, but you're not quite ready to publish it yet. -->
+
+![Branches 2 -- bg fit](figures/branches-2.png)
+
+---
+
+<!-- You might choose to create a new branch (which I've called "draft" here), and you can add the post about your second project on that branch. Now what you have is essentially two different versions of your code. If I want or need, I can actually modify each of these versions independently. -->
+
+![Branches 3 -- bg fit](figures/branches-3.png)
+
+---
+
+<!-- For example, let's say I need to correct the title of my first project -- maybe I misspelled it the first time, or maybe I decided to rename it. Regardless, I can update the name of that project without needing to publish my draft information about project 2. -->
+
+![Branches 4 -- bg fit](figures/branches-4.png)
+
+---
+
+<!-- When I'm ready I can complete my post about project 2... -->
+
+![Branches 5 -- bg fit](figures/branches-5.png)
+
+---
+
+<!-- And then to get the post onto my GitHub Pages hosted site, I can merge the changes back into my main branch. So branches are these parallel work streams that you can maintain separately and then have git fold back together when you're ready. -->
+
+![Branches 6 -- bg fit](figures/branches-6.png)
 
 ---
 
@@ -438,6 +491,8 @@ Finally, you can use the command line. This is the most powerful option, but it'
 
 ![GitHub Repository - Cloning Options -- bg right:56.25% cover](figures/github-repository-clone.png)
 
+<!-- The first thing you'll do with your code is clone it. This is essentially downloading your code, but in the folder where your code is, git will also store information about where the code came from. So it's not just the code that gets downloaded to your computer, but also metadata about changes that have been made to that code over time and where the code can be pushed to when new changes are made. -->
+
 ---
 
 ## Where is your code?
@@ -448,9 +503,13 @@ Finally, you can use the command line. This is the most powerful option, but it'
 
 ## Update, commit, push!
 
+<!-- Once you've cloned your code, the three most common things that you'll end up doing through git are: [READ THE SLIDE] -->
+
 1.  Make changes to your local files
 2.  Commit those changes to your repository
 3.  Push those changes to GitHub
+
+<!-- Each git client has a slightly different way of doing each of these, and they're all fine, but I encourage you to get very comfortable with the way that your git client has you add changes, commit those changes, and push them up to GitHub. -->
 
 ---
 
@@ -458,12 +517,12 @@ Finally, you can use the command line. This is the most powerful option, but it'
 
 <!-- conflicts happen when git doesn't know what action should be taken. -->
 
-1.  Modify the _/data/settings.md_ file on GitHub:
+1.  Modify the _/data/settings.yml_ file on GitHub:
     ```yml
     intro_title: My Personal Mission 10-word Summary
     ```
     Commit that change.
-2.  Modify the _/data/settings.md_ file on your computer:
+2.  Modify the _/data/settings.yml_ file on your computer:
     ```yml
     intro_title: The Personal Mission 10-word Summary
     ```
