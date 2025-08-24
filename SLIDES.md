@@ -10,7 +10,10 @@ _Using `git` and GitHub for your projects and portfolio_
 I want you all to leave here with a functioning portfolio. 
 
 Objectives:
-- 
+- Create a GitHub account (if you don't have one)
+- Create a portfolio repository
+- Add a project to your portfolio
+- Learn basic Git commands
 
 -->
 
@@ -155,6 +158,11 @@ I think the thing that pushed `git` over the top was...
 ---
 
 ### Sample GitHub version history
+
+<!-- Here we have a screenshot demonstrating how Github is more than just a place to store code. This is a small portion of what's called the "commit history" of a Python package called GeoPandas, which is widely used for geospatial data analysis. This screenshot is showing us specific changes from the vast number of modifications that have been made to this project over time. What's more, like many of the software tools you'll be using in various classes, GeoPandas is an open-source project, which means that its development is driven by a community of contributors. For example, you can see one of my commits here. I don't work for any company that maintains and owns GeoPandas; such a company doesn't exist.
+
+So, Git as a version control system is a powerful tool for facilitating this kind of decentralized collaboration, and GitHub enhances Git by providing a user-friendly interface and additional features that support collaboration and project management. -->
+
 ![Sample GitHub version history -- bg right contain](figures/sample-github-version-history.png)
 
 ---
